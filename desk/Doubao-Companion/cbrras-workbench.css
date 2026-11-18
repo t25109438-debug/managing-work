@@ -1,0 +1,48 @@
+/* Quiet visual skin. No production panel or account control is hidden. */
+:root{--bg:#f3f5f8;--text:#182535;--text-2:#425267;--text-3:#53657a;--border:#dbe2ea;--brand:#315ac9;--r:12px}
+body{background:var(--bg)!important;color:var(--text);font-family:Arial,"Microsoft YaHei",sans-serif;font-size:14px;line-height:1.6}
+.bg-deco,.bg-earth,.bg-halo,.bg-orbit,.gate{display:none!important}
+.shell{max-width:none!important;padding:12px 20px!important;margin:0!important}
+.top{position:static!important;min-height:44px!important;padding:0 0 10px!important;box-shadow:none!important;background:none!important}
+.top .brand{font-size:17px}.top .brand small{font-size:12px}.top .brand .dot{width:30px;height:30px;border-radius:8px;background:#263a56}
+.top [onclick="logoutGate()"]{display:none}
+.pipe{margin:0 0 12px!important;padding:8px 12px!important;background:white!important;border:1px solid var(--border);border-radius:10px}
+.card{background:white!important;border:1px solid var(--border)!important;border-radius:12px!important;box-shadow:none!important}
+.card>.head{padding:13px 16px!important}.card>.body{padding:16px!important}
+h2{font-size:18px!important;letter-spacing:0!important}label{font-size:13px!important;color:#34455b!important}input,select,textarea{font-size:14px!important;color:#1e2f45!important;background:#fff!important;line-height:1.6!important}
+.btn{font-size:13px!important;min-height:34px;box-shadow:none!important;letter-spacing:0!important}.btn.primary{background:#315ac9!important;color:white!important}
+.tip,.hint{color:#52647a!important;line-height:1.65!important}.cbrras-shared{padding:14px;background:#f3f6fc;border:1px solid #cfd9ec;border-radius:9px;margin-bottom:18px}.cbrras-shared .row{margin-bottom:8px}.cbrras-shared select{flex:1;min-width:160px}.cbrras-shared b{color:#253e62}
+.cbrras-shared .tip{font-size:12px}
+main{align-items:start!important}.head .hint{max-width:42em}.mask{background:rgba(17,29,46,.4)!important}
+@media(max-width:1050px){main{display:block!important}aside{margin-top:16px}.shell{padding:10px!important}}
+
+#pipeBar{display:block!important;position:static!important}#pipeBar .pnode-wrap{display:none!important}#pipeBar .qjump{position:static!important;display:flex!important;flex-wrap:wrap;gap:6px;justify-content:flex-start}#pipeBar .qlabel{display:none}.qbtn{border-radius:7px!important;padding:5px 9px!important}.top{border-bottom:1px solid #dbe3ed!important}.dot,.step-no{box-shadow:none!important}
+
+.btn{border-radius:8px!important}input,select,textarea{border-radius:8px!important}.top .brand small{font-size:12px!important}.top .badge{font-size:12px}.pnode,.step-no{border-radius:7px!important}
+
+.top .brand{margin-left:16px}.top .brand .dot::before,.top .brand .dot::after{display:none!important}
+/* v16 progressive workflow; all original controls/handlers remain mounted. */
+body.cbrras-flow{height:100vh;overflow:hidden}.cbrras-flow .shell{height:100vh;display:flex;flex-direction:column;padding:8px 16px!important;box-sizing:border-box}.cbrras-flow .top{flex:none;min-height:40px!important;padding-bottom:8px!important}.cbrras-flow #pipeBar{display:none!important}.doubao-flow-nav{display:flex;gap:6px;padding:9px 0 12px;flex-wrap:wrap;flex:none}.doubao-flow-nav button{border:1px solid #d6dfec;background:#fff;color:#35475c;border-radius:8px;padding:8px 13px;font-size:14px;font-weight:650;cursor:pointer}.doubao-flow-nav button.active{background:#315ac9;color:#fff;border-color:#315ac9}.cbrras-flow main{flex:1;min-height:0;overflow:auto!important;display:block!important;scrollbar-gutter:stable}.cbrras-flow #mainCol{max-width:none!important}.cbrras-flow main>aside[hidden],.cbrras-flow #mainCol>section[hidden]{display:none!important}.cbrras-flow.show-flow-tools main{display:grid!important;grid-template-columns:minmax(0,1fr) 270px;gap:16px}.cbrras-flow .card>.head .hint{font-size:12px}.cbrras-flow .card{margin-bottom:14px}.doubao-help-fold{margin:8px 0;color:#52647a}.doubao-help-fold summary{cursor:pointer;font-size:13px}.gallery-input-button{margin:6px;padding:6px 10px;border:1px solid #cad7ed;background:#fff;border-radius:7px;color:#315ac9}
+#modal-root .modal-shade{position:fixed;inset:0;z-index:100000;background:#172c4866;display:flex;align-items:center;justify-content:center;padding:20px}#modal-root .modal{width:min(960px,94vw);max-height:90vh;overflow:auto;background:white;border-radius:14px;padding:22px;color:#182535}#modal-root .modal-head{display:flex;justify-content:space-between;align-items:center}.product-photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:12px}.product-photo{display:flex;position:relative;flex-direction:column;padding:8px;border:1px solid #d8e2ed;border-radius:9px;overflow:hidden;word-break:break-word}.product-photo img{height:130px;width:100%;object-fit:contain}.product-photo input{position:absolute;top:8px;left:8px;width:18px;height:18px}.product-picker-list{max-height:60vh;overflow:auto}.gallery-picker-footer{display:flex;align-items:center;justify-content:space-between;padding:16px 0}.product-photo:has(input:checked){border-color:#315ac9;background:#eef3ff}
+.cbrras-flow #mainCol>.card,.cbrras-flow aside .card{animation:none!important;opacity:1!important;transform:none!important}.cbrras-flow .card::before{display:none!important}.cbrras-flow .foot{display:none!important}
+.cbrras-model-routing>summary{cursor:pointer;font-weight:650;color:#294564;font-size:14px}
+.cbrras-routing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cbrras-routing-grid label{display:flex;flex-direction:column;gap:6px;min-width:0}
+.cbrras-routing-grid select{width:100%;min-width:0;max-width:100%}
+.cbrras-settings-notice p{margin:7px 0;line-height:1.6}
+.cbrras-api-managed{background:#f2f5f9!important;color:#65758a!important;cursor:default}
+.cbrras-central-job{display:flex;flex-direction:column;gap:4px;padding:10px 0;border-bottom:1px solid #dce4ee}
+.cbrras-central-job:last-child{border-bottom:0}.cbrras-central-job span,.cbrras-central-job small{font-size:12px;color:#53677e;overflow-wrap:anywhere}
+@media(max-width:1050px){.cbrras-routing-grid{grid-template-columns:1fr}.cbrras-flow .top{flex-wrap:wrap;gap:6px}.cbrras-flow .top .brand{margin-left:0}}
+
+/* Commercial controls: one visible model source; no decorative animation. */
+[hidden]{display:none!important}
+.popeye-btn,.gen-go-btn,.btn.popeye,.btn-start{background:#315ac9!important;background-image:none!important;box-shadow:none!important;animation:none!important;border-radius:7px!important;color:white!important}
+.popeye-btn::before,.popeye-btn::after,.gen-go-btn::before,.gen-go-btn::after{display:none!important}.popeye-btn svg,.popeye-btn .popeye-thumb{display:none!important}
+.btn[class*="danger"],#stopAllBtn{background:#ad3347!important;background-image:none!important;box-shadow:none!important;animation:none!important}
+.btn *{animation:none!important;text-shadow:none!important}.professional-asset-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:12px;margin:12px 0}.professional-asset{border:1px solid #d7dfeb;padding:10px;border-radius:8px;display:flex;flex-direction:column;gap:6px;max-width:240px}.professional-asset img{width:100%;height:130px;object-fit:contain}.professional-asset input{width:18px;height:18px}.workspace-launcher{position:fixed;right:22px;bottom:22px;z-index:1002;background:#263e63;color:white;border:0;border-radius:8px;padding:11px 20px;font-size:14px;cursor:pointer}.workspace-drawer{position:fixed;right:22px;bottom:72px;width:min(440px,calc(100vw - 44px));max-height:70vh;overflow:auto;z-index:1003;background:white;border:1px solid #cfd9e8;border-radius:10px;padding:18px;box-shadow:0 12px 40px #152b4820}.workspace-jobs p{padding:10px 0;border-bottom:1px solid #e5eaf2}.capability-actions{margin-top:12px}.capability-actions .tip{flex-basis:100%}
+
+.portal-btn{background:#315ac9!important;border:1px solid #315ac9!important;color:white!important;box-shadow:none!important;animation:none!important;height:38px!important;min-width:150px!important;border-radius:7px!important;transform:none!important}.portal-btn .p-ring,.portal-btn .p-vortex,.portal-btn .p-streaks,.portal-btn .p-core{display:none!important}.portal-btn .p-label{position:static!important;transform:none!important;letter-spacing:0!important;text-shadow:none!important}.stopbtn{background:#a93949!important;border:1px solid #a93949!important;box-shadow:none!important;animation:none!important;border-radius:7px!important;height:38px!important}.stopbtn .sb-oct{display:none!important}.stopbtn .sb-label{animation:none!important}.warp-layer,.warp-overlay,#warpOverlay{display:none!important}
+
+/* v21 consistent workbench type and panel spacing */
+body{font-family:Segoe UI,Microsoft YaHei,Arial,sans-serif!important;font-size:14px!important;line-height:1.6;padding-bottom:138px!important}h2{font-size:20px!important}h3{font-size:16px!important}.hint,.muted{font-size:13px!important}button,.btn,input,select,textarea{font-family:inherit!important}button,.btn{font-size:14px!important;border-radius:7px!important;animation:none!important;background-image:none!important;box-shadow:none!important}.cbrras-log-float{bottom:76px!important;right:20px!important}.cbrras-workbench-launcher{bottom:18px!important;right:20px!important}

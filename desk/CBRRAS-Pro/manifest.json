@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "CBRRAS 采集助手",
+  "version": "21.0.0",
+  "description": "手动采集当前视频与已加载评论，发送到CBRRAS本机工作台；不修改网页播放器。",
+  "minimum_chrome_version": "119",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "CBRRAS 采集助手",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "helper-worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; base-uri 'self'; worker-src 'self'"
+  }
+}
